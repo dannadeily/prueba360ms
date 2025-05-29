@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maqueta con Footer al Fondo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="flex flex-col min-h-screen h-full bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-black bg-opacity-70 backdrop-blur-sm text-white py-4 z-50"
+        style="height: 64px;">
+        <div class="container mx-auto px-4 flex items-center justify-between h-full">
+            <div class="flex items-center space-x-8 text-sm">
+                <div class="flex items-center space-x-2">
+                    <i data-feather="phone"></i>
+                    <span>(+57) 312 451 6931 474</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i data-feather="mail"></i>
+                    <span>mail@360ms.com</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i data-feather="phone"></i>
+                    <span>(+1) 312 451 6931 474</span>
+                </div>
+            </div>
+            <div class="text-sm font-medium">
+                <button class="hover:underline">EN</button> |
+                <button class="hover:underline">ES</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="sticky bg-gray-900 bg-opacity-50 backdrop-blur-sm text-white z-40" style="top: 64px; height: 64px;">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <span class="text-3xl font-bold"><span class="text-orange-500">360</span>MS</span>
+        
+            <!-- Toggle menu checkbox (oculto) -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        
+            <!-- Label como botón hamburguesa -->
+            <label for="menu-toggle" class="md:hidden text-white cursor-pointer text-3xl">
+              ☰
+            </label>
+        
+            <!-- Menú -->
+            <div
+              class="peer-checked:flex hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto mt-4 md:mt-0"
+            >
+              <a href="#" class="hover:underline">Inicio</a>
+              <a href="#" class="hover:underline">Nosotros</a>
+              <a href="#" class="hover:underline">Marketing Digital</a>
+              <a href="#" class="hover:underline">Desarrollo web</a>
+              <a href="#" class="hover:underline">Blog</a>
+              <a href="#" class="hover:underline">Contacto</a>
+            </div>
+          
+            <div class="flex justify-center space-x-4 mt-2 md:mt-0">
+                <a href="#"><i data-feather="linkedin" class="hover:text-blue-400"></i></a>
+                <a href="#"><i data-feather="facebook" class="hover:text-blue-400"></i></a>
+                <a href="#"><i data-feather="instagram" class="hover:text-blue-400"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cuerpo -->
+    <main class="flex-grow pt-[128px] mx-12">
+        <!-- Sección 1: Presentación -->
+        <div class="py-10 px-4 md:px-32 bg-gray-900">
+            <h2 class="text-4xl md:text-9xl font-bold mb-8 text-center uppercase">Nosotros</h2>
+            <div class="flex flex-col md:flex-row gap-6">
+
+                <!-- Primera columna -->
+                <div class="flex flex-col gap-4 w-full md:w-1/3">
+                    <div class="p-4 text-white rounded">
+                        <h2 class="text-4xl font-bold">10+</h2>
+                        <span>Años de experiencia</span>
+                    </div>
+                    <div class="p-4 text-white rounded">
+                        <h2 class="text-4xl font-bold">99%</h2>
+                        <span>Resultados</span>
+                    </div>
+                    <div class="p-4 text-white rounded">
+                        <h2 class="text-4xl font-bold">24/7</h2>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                    </div>
+                </div>
+
+                <!-- Segunda columna -->
+                <div class="w-full md:w-1/3 p-4 text-white rounded flex justify-center items-center">
+                    <img src="img/cohete1.png" alt="Cohete" class="w-full h-auto max-w-sm mx-auto">
+                </div>
+
+                <!-- Tercera columna -->
+                <div class="w-full md:w-1/3 p-4 text-white rounded">
+                    <h2 class="text-xl md:text-2xl font-bold mb-2">AGENCIA CREATIVA CON LAS MEJORES SOLUCIONES</h2>
+                    <p>Somos una agencia especializada en marketing digital con más de 10 años de experiencia en
+                        diseñar, implementar y optimizar estrategias de inbound marketing, ventas y servicios.</p>
+                    <button
+                        class="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600 transition-colors duration-300 flex items-center gap-2">
+                        <i data-feather="play-circle" class="w-5 h-5"></i>
+                        <span>Ver video</span>
+                    </button>
+
+                    <script>
+                        feather.replace(); // Asegúrate de incluir esto para que los íconos se carguen
+                    </script>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="py-10 bg-gray-900">
+            <h2 class="text-2xl font-bold mb-4 text-center uppercase">Nuestras Sedes</h2>
+
+            <p class="text-center"> </p>
+            <div class="container mx-auto px-4 py-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Columna 1 -->
+                    <div
+                        class="bg-white bg-opacity-10  text-white p-6 border border-orange-500 rounded-lg flex items-center justify-between space-x-6">
+
+                        <img src="img/129243509-icono-de-línea-de-arte-denegado-censura-no-hay-foto-no-hay-imagen-disponible-rechazar-o-cancelar-con.jpg"
+                            alt="Avatar o imagen" class="w-32 h-32 border border-white rounded-lg object-cover" />
+                        <div class="flex-1">
+                            <h2 class="text-3xl text-orange-500 font-bold mb-2">Colombia</h2>
+                            <h3 class="text-xl font-semibold mb-2">Dirección</h3>
+                            <p class="text-gray-300">Este es un párrafo descriptivo que acompaña al contenido.</p>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div
+                        class="bg-white bg-opacity-10  text-white p-6 border border-orange-500 rounded-lg flex items-center justify-between space-x-6 ">
+
+                        <img src="img/129243509-icono-de-línea-de-arte-denegado-censura-no-hay-foto-no-hay-imagen-disponible-rechazar-o-cancelar-con.jpg"
+                            alt="Avatar o imagen" class="w-32 h-32 border border-white rounded-lg object-cover " />
+                        <div class="flex-1">
+                            <h2 class="text-3xl text-orange-500 font-bold mb-2">Estados Unidos</h2>
+                            <h3 class="text-xl font-semibold mb-2">Dirección</h3>
+                            <p class="text-gray-300">Este es un párrafo descriptivo que acompaña al contenido.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                feather.replace();
+            </script>
+        </div>
+
+
+        <div class="py-10 bg-gray-900">
+            <div class="flex items-center justify-between px-4 mb-4">
+                <h2 class="text-2xl font-bold mb-4 text-rigth px-2 uppercase">Conoce nuestro team</h2>
+                <p class="text-right text-sm mx-2">Lorem ipsum dolor sit amet consectetur. A cras diam commodo ultrices.
+                    Quis orci sed metus sagittis quam neque sed euismod.</p>
+            </div>
+            <div class="flex justify-center space-x-6 ">
+                <div class="w-32  bg-blue-400 text-center border border-white p-4 rounded-lg">
+                    <img src="img/avatar1.webp" alt="Avatar 1" class="w-24 h-24 mx-auto rounded-full mb-2">
+                    <p class="text-white text-sm font-semibold"></p>
+                </div>
+                <div class="w-32 text-center border border-white p-4 rounded-lg">
+                    <img src="img/avatar2.jpg" alt="Avatar 2" class="w-24 h-24 mx-auto rounded-full mb-2">
+                    <p class="text-white text-sm font-semibold">Sonia Bermudez</p>
+                    <span>CEO</span>
+                </div>
+                <div class="w-32 bg-yellow-500 text-center border border-white p-4 rounded-lg">
+                    <img src="img/pngtree-cartoon-color-simple-male-avatar-png-image_5230557.jpg" alt="Avatar 3"
+                        class="w-24 h-24 mx-auto rounded-full mb-2">
+                    <p class="text-white text-sm font-semibold">Avatar</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="py-10 bg-gray-900">
+            <h2 class="text-2xl font-bold mb-4 text-center uppercase">Lo que dicen de nosotros</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur. A cras diam commodo ultrices.Quis orci sed
+                metus sagittis quam neque sed euismod. </p>
+            <p class="text-center"> </p>
+            <div class="container mx-auto px-4 py-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Columna 1 -->
+                    <div class="text-white p-6 ">
+                        <h2 class="text-3xl font-bold mb-2">Título Impactante</h2>
+                        <h3 class="text-xl font-semibold mb-2">Subtítulo atractivo</h3>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+
+                        </div>
+                        <p class="text-gray-300">Este es un párrafo descriptivo que acompaña al contenido. Puedes
+                            colocar aquí testimonios, descripciones o cualquier otra información relevante.</p>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div class=" text-white p-6 ">
+                        <h2 class="text-3xl font-bold mb-2">Otro Título</h2>
+                        <h3 class="text-xl font-semibold mb-2">Otro Subtítulo</h3>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                        </div>
+                        <p class="text-gray-300">Este es otro párrafo. Puedes adaptarlo para mostrar comparaciones,
+                            ventajas o cualquier otro texto necesario para tu diseño.</p>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                feather.replace();
+            </script>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h1 class="text-5xl text center uppercase font-bold "> <span class="text-orange-500">360</span>MS
+                    </h1>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold mb-2">Menú</p>
+                    <div class="space-y-1">
+                        <a href="#" class="text-white hover:underline block">Servicios</a>
+                        <a href="#" class="text-white hover:underline block">Blog</a>
+                        <a href="#" class="text-white hover:underline block">Contacto</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold mb-2">Contacto</p>
+                    <div class="space-y-1">
+                        <p>+57 5485784877</p>
+                        <p>mail@360ms.com</p>
+                        <p>Calle 13234, Bogotá</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold mb-2">Suscríbete</p>
+                    <form class="flex justify-center mt-2">
+                        <input type="email" placeholder="Tu correo"
+                            class="px-3 py-2 w-48 bg-black text-white placeholder-gray-400 focus:outline-none border border-white" />
+                        <button type="submit"
+                            class="bg-white hover:bg-gray-300 text-orange-500 font-bold px-4 py-2 border border-white transition-colors duration-300">
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Inferior -->
+            <div class="mt-8 text-sm grid grid-cols-1 lg:grid-cols-3 gap-6 text-center">
+                <div>
+                    <p class="mb-1">© 2023 360MS. Todos los derechos reservados.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-center sm:space-x-6 space-y-2 sm:space-y-0 mt-4">
+                    <a href="#" class="text-white hover:underline font-bold">Términos</a>
+                    <a href="#" class="text-white hover:underline font-bold">Privacidad</a>
+                </div>
+                <div class="flex justify-center space-x-4 mt-2">
+                    <a href="#"><i data-feather="linkedin" class="hover:text-blue-400"></i></a>
+                    <a href="#"><i data-feather="facebook" class="hover:text-blue-400"></i></a>
+                    <a href="#"><i data-feather="instagram" class="hover:text-blue-400"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        feather.replace();
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
