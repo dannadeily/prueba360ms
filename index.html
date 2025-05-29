@@ -14,22 +14,22 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 bg-black bg-opacity-70 backdrop-blur-sm text-white py-4 z-50"
         style="height: 64px;">
-        <div class="container mx-auto px-4 flex items-center justify-between h-full">
-            <div class="flex items-center space-x-8 text-sm">
+        <div class="container mx-auto px-4 flex flex-wrap md:flex-nowrap items-center justify-between h-full gap-y-2">
+            <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm w-full md:w-auto justify-center md:justify-start">
                 <div class="flex items-center space-x-2">
                     <i data-feather="phone"></i>
-                    <span>(+57) 312 451 6931 474</span>
+                    <span class="whitespace-nowrap">(+57) 312 451 6931 474</span>
                 </div>
                 <div class="flex items-center space-x-2">
                     <i data-feather="mail"></i>
-                    <span>mail@360ms.com</span>
+                    <span class="break-all">mail@360ms.com</span>
                 </div>
                 <div class="flex items-center space-x-2">
                     <i data-feather="phone"></i>
-                    <span>(+1) 312 451 6931 474</span>
+                    <span class="whitespace-nowrap">(+1) 312 451 6931 474</span>
                 </div>
             </div>
-            <div class="text-sm font-medium">
+            <div class="text-sm font-medium w-full md:w-auto text-center md:text-right">
                 <button class="hover:underline">EN</button> |
                 <button class="hover:underline">ES</button>
             </div>
@@ -40,27 +40,26 @@
     <nav class="sticky bg-gray-900 bg-opacity-50 backdrop-blur-sm text-white z-40" style="top: 64px; height: 64px;">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
             <span class="text-3xl font-bold"><span class="text-orange-500">360</span>MS</span>
-        
+
             <!-- Toggle menu checkbox (oculto) -->
             <input type="checkbox" id="menu-toggle" class="hidden peer" />
-        
+
             <!-- Label como botón hamburguesa -->
             <label for="menu-toggle" class="md:hidden text-white cursor-pointer text-3xl">
-              ☰
+                ☰
             </label>
-        
+
             <!-- Menú -->
             <div
-              class="peer-checked:flex hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto mt-4 md:mt-0"
-            >
-              <a href="#" class="hover:underline">Inicio</a>
-              <a href="#" class="hover:underline">Nosotros</a>
-              <a href="#" class="hover:underline">Marketing Digital</a>
-              <a href="#" class="hover:underline">Desarrollo web</a>
-              <a href="#" class="hover:underline">Blog</a>
-              <a href="#" class="hover:underline">Contacto</a>
+                class="peer-checked:flex hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto mt-4 md:mt-0">
+                <a href="#" class="hover:underline">Inicio</a>
+                <a href="#" class="hover:underline">Nosotros</a>
+                <a href="#" class="hover:underline">Marketing Digital</a>
+                <a href="#" class="hover:underline">Desarrollo web</a>
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Contacto</a>
             </div>
-          
+
             <div class="flex justify-center space-x-4 mt-2 md:mt-0">
                 <a href="#"><i data-feather="linkedin" class="hover:text-blue-400"></i></a>
                 <a href="#"><i data-feather="facebook" class="hover:text-blue-400"></i></a>
